@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@commitlint/config-conventional"
+  ],
+  "prompt": {
+    "settings": {
+      "enableMultipleScopes": true,
+      "scopeEnumSeparator": ","
+    }
+  }
+}

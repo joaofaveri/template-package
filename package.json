@@ -1,0 +1,55 @@
+{
+  "name": "@legislato/template-package",
+  "version": "0.0.0",
+  "description": "Template para a criação de packages",
+  "license": "MIT",
+  "author": "João Paulo de Faveri",
+  "homepage": "https://www.legislato.com.br",
+  "repository": {
+    "url": "https://gihthub.com/joaofaveri/template-package.git"
+  },
+  "keywords": [
+    "typescript",
+    "package",
+    "template"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.js",
+  "scripts": {
+    "build": "tsup",
+    "prepare": "husky",
+    "release": "dotenv release-it --"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/js": "^9.21.0",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "@types/node": "^22.13.5",
+    "commitizen": "^4.3.1",
+    "cz-emoji-conventional": "^1.1.0",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2",
+    "release-it": "^18.1.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji-conventional"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
