@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
   "git": {
-    "commitMessage": "chore: release v${version}"
+    "commitMessage": "chore(release): new release - v${version}"
   },
   "github": {
     "release": true
@@ -26,8 +26,7 @@
             "type": "refactor",
             "section": "Code Changes",
             "hidden": false
-          },
-          {}
+          }
         ]
       },
       "infile": "CHANGELOG.md"
