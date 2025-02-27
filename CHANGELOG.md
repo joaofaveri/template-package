@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.5 (2025-02-27)</small>
+
+* 🐛 fix(release): correção dos argumentos para o git commit ([e941176](https://gihthub.com/joaofaveri/template-package/commits/e941176))
+* 🐛 fix(release): correção dos argumentos passados para o git ([bd3cda2](https://gihthub.com/joaofaveri/template-package/commits/bd3cda2))
+* 🐛 fix(release): desabilitar hooks durante o commit do release e reabilitar em seguida ([a71975e](https://gihthub.com/joaofaveri/template-package/commits/a71975e))
+
 ## <small>0.0.4 (2025-02-27)</small>
 
 ## <small>0.0.3 (2025-02-27)</small>
