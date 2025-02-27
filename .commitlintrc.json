@@ -1,7 +1,18 @@
 {
   "extends": [
+    "@commitlint/config-conventional",
     "@commitlint/config-pnpm-scopes"
   ],
+  "rules": {
+    "scope-enum": [1, "always", [
+      "src",
+      "docs",
+      "npm",
+      "lint",
+      "release",
+      "general"
+    ]]
+  },
   "prompt": {
     "settings": {
       "enableMultipleScopes": true,
