@@ -3,6 +3,7 @@
     "@commitlint/config-conventional",
     "@commitlint/config-pnpm-scopes"
   ],
+  "parserPreset": "conventional-changelog-conventionalcommits",
   "rules": {
     "scope-enum": [1, "always", [
       "src",
