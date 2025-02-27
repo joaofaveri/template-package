@@ -1,1 +1,8 @@
+message=$1
+trailer=$(git interpret-trailers --parse ${message} | grep '^author:')
+echo "trailer: $trailer"
+if [ "$trailer" = 'author: release' ]; then
+  echo "Skipping commit message validation because it's a release commit"
+  exit 0
+fi
 exec < /dev/tty && npx cz --hook || true
