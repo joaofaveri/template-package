@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.8 (2025-02-27)</small>
+
+* ♻️ refactor(release): remoção de comandos para console.log ([feafe75](https://gihthub.com/joaofaveri/template-package/commits/feafe75))
+
 ## <small>0.0.7 (2025-02-27)</small>
 
 * 🐛 fix(release): ajuste da mensagem de commit e do script do release-it ([862d9b6](https://gihthub.com/joaofaveri/template-package/commits/862d9b6))
