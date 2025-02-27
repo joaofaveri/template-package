@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.4 (2025-02-27)</small>
+
 ## <small>0.0.3 (2025-02-27)</small>
 
 * 🏗️ build(npm): criação de um script para rodar o release-it em modo dry ([97477f7](https://gihthub.com/joaofaveri/template-package/commits/97477f7))
