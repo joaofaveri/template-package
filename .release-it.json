@@ -81,7 +81,7 @@
         ]
       },
       "infile": "CHANGELOG.md",
-      "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).",
+      "header": "# :tada: Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).",
       "context": {
         "linkCompare": true
       }
