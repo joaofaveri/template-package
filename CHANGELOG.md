@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.3 (2025-02-27)</small>
+
+* 🏗️ build(npm): criação de um script para rodar o release-it em modo dry ([97477f7](https://gihthub.com/joaofaveri/template-package/commits/97477f7))
+* 🏗️ build(npm): remoção de plugin do commitlint não utilizado ([10cec16](https://gihthub.com/joaofaveri/template-package/commits/10cec16))
+* 🐛 fix(npm): reinstalação do @commitlint/config-conventional que é obrigatório ([68cc148](https://gihthub.com/joaofaveri/template-package/commits/68cc148))
+
 ## <small>0.0.2 (2025-02-27)</small>
 
 * 🐛 fix(lint): ajustar hooks para commitlint e instalar novas regras ([1b20eeb](https://gihthub.com/joaofaveri/template-package/commits/1b20eeb))
