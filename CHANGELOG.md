@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0](https://gihthub.com/joaofaveri/template-package/compare/0.1.0...0.2.0) (2025-02-27)
+
+### :sparkles: Features
+
+* **lint:** inclusão de arquivos json no eslint ([5bc5339](https://gihthub.com/joaofaveri/template-package/commit/5bc533991795581299ae55956f640a860620493e))
+* **lint:** inclusão de ícones na configuração do commitlint ([6d9e804](https://gihthub.com/joaofaveri/template-package/commit/6d9e804787584c970b6e27233325c68dbb2aabdb))
+
+### :lady_beetle: Bug Fixes
+
+* **lint:** inclusão do parserPreset ([01d5e81](https://gihthub.com/joaofaveri/template-package/commit/01d5e81c9c5262960fbf07e97f1791a89b39af38))
+* **lint:** remover o conventionalcommits override e instalar a versão indicada ([5350a76](https://gihthub.com/joaofaveri/template-package/commit/5350a76262d3754f43fbca04c2dc62ee1ddf6dc3))
+
 ## [0.1.0](https://gihthub.com/joaofaveri/template-package/compare/0.0.8...0.1.0) (2025-02-27)
 
 ### :sparkles: Features
