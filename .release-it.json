@@ -6,7 +6,7 @@
   },
   "git": {
     "commitMessage": "🧹 chore(release): new release - v${version}",
-    "commitArgs": ["-n", "-v", "-S", "-- --trailer 'author:release'"],
+    "commitArgs": ["-n", "-v", "-S --", "trailer 'author:release'"],
     "tagArgs": ["-s"]
   },
   "github": {
