@@ -1,3 +1,25 @@
+# :tada: Changelog
+
+All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0](https://gihthub.com/joaofaveri/template-package/compare/0.0.8...0.1.0) (2025-02-27)
+
+### :sparkles: Features
+
+* incluir o scope-enum nas regras do commitlint ([6a593e6](https://gihthub.com/joaofaveri/template-package/commit/6a593e6a293d8a696956ab8e77801072fa68fc2b))
+* **lint:** inclusão do adpater oficial do commitlint, sem emojis ([fee3649](https://gihthub.com/joaofaveri/template-package/commit/fee36494fdc3950c5a945d3536df4344f9c18f23))
+* **release:** incluir comentários do release ao fechar um issue ou PR ([7bf2927](https://gihthub.com/joaofaveri/template-package/commit/7bf292723045d81a2063c261c3e2449da51fe3cb))
+
+### :lady_beetle: Bug Fixes
+
+* **release:** correção da URL do semver ([590ffc9](https://gihthub.com/joaofaveri/template-package/commit/590ffc9cba8b5c61136acb3a13d328a8360e5075))
+* **release:** importante recomendação de override do release-it ([b101db9](https://gihthub.com/joaofaveri/template-package/commit/b101db9d05ca32b80bace80b0fa53739d20b4f3a))
+* **release:** remove hooks por conflito no windows. Manter apenas o param -n nos commits ([76ad59a](https://gihthub.com/joaofaveri/template-package/commit/76ad59a6ec96142e20864a76d60e37fe45f2cf7c))
+
+### :recycle: Code Changes (Refactors)
+
+* **release:** substituir emojis por código e melhorar textos ([9846a55](https://gihthub.com/joaofaveri/template-package/commit/9846a55843d6971be2cf7a09e68b3fc6e98dd44f))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
