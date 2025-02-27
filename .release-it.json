@@ -6,7 +6,7 @@
   },
   "git": {
     "commitMessage": "chore(release): new release - v${version}",
-    "commitArgs": ["--no-verify -S"],
+    "commitArgs": ["-n -S"],
     "tagArgs": ["-s"]
   },
   "github": {
