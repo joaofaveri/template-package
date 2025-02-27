@@ -31,6 +31,7 @@
     "@release-it/conventional-changelog": "^10.0.0",
     "@types/node": "^22.13.5",
     "commitizen": "^4.3.1",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "cz-emoji-conventional": "^1.1.0",
     "dotenv-cli": "^8.0.0",
     "eslint": "^9.21.0",
@@ -54,8 +55,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "overrides": {
-    "conventional-changelog-conventionalcommits": "8.0.0"
   }
 }
