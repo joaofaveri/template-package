@@ -1,7 +1,8 @@
 {
   "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
   "git": {
-    "commitMessage": "chore(release): new release - v${version}"
+    "commitMessage": "chore(release): new release - v${version}",
+    "commitArgs": ["--no-verify"]
   },
   "github": {
     "release": true
@@ -16,20 +17,69 @@
         "types": [
           {
             "type": "feat",
-            "section": "Features"
+            "section": "✨ Features"
           },
           {
             "type": "fix",
-            "section": "Bug Fixes"
+            "section": "🐛 Bug Fixes"
+          },
+          {
+            "type": "refactor",
+            "section": "♻️ Code Changes (Refactors)",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": "📝 Documentation",
+            "hidden": false
+          },
+          {
+            "type": "style",
+            "section": "💎 Visual Changes",
+            "hidden": false
+          },
+          {
+            "type": "perf",
+            "section": "📈 Performance Improvements",
+            "hidden": false
+          },
+          {
+            "type": "test",
+            "section": "🧪 Code Tests",
+            "hidden": false
           },
           {
             "type": "refactor",
             "section": "Code Changes",
             "hidden": false
+          },
+          {
+            "type": "build",
+            "section": "🏗️ Build System or External Dependencies",
+            "hidden": false
+          },
+          {
+            "type": "ci",
+            "section": "📦 Continuous Integrations",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "section": "🧹 Other changes",
+            "hidden": false
+          },
+          {
+            "type": "revert",
+            "section": "⏪ Reverts a Previous Commit",
+            "hidden": false
           }
         ]
       },
-      "infile": "CHANGELOG.md"
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).",
+      "context": {
+        "linkCompare": true
+      }
     }
   }
 }
