@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.7 (2025-02-27)</small>
+
+* 🐛 fix(release): ajuste da mensagem de commit e do script do release-it ([862d9b6](https://gihthub.com/joaofaveri/template-package/commits/862d9b6))
+* 🐛 fix(release): correção dos parâmetros de commit do release ([703e7a3](https://gihthub.com/joaofaveri/template-package/commits/703e7a3))
+* 🐛 fix(release): corrigir os parâmetros do commit de release ([493f46e](https://gihthub.com/joaofaveri/template-package/commits/493f46e))
+* 🐛 fix(release): evita a validação com commitizen se o commit for para release ([6fffd66](https://gihthub.com/joaofaveri/template-package/commits/6fffd66))
+* 🐛 fix(release): exibir os parâmetros do commit para debug ([5a057fa](https://gihthub.com/joaofaveri/template-package/commits/5a057fa))
+* 🐛 fix(release): mostrar arquivo inteiro de mensagem e checar existência de string de release ([5b632cd](https://gihthub.com/joaofaveri/template-package/commits/5b632cd))
+* 🐛 fix(release): visualizar mensagem de commit para ajustes no prepare-commit-msg ([a1db326](https://gihthub.com/joaofaveri/template-package/commits/a1db326))
+* 🧹 chore(release): new release - v0.0.6 ([d508908](https://gihthub.com/joaofaveri/template-package/commits/d508908))
+* teste ([be53e5b](https://gihthub.com/joaofaveri/template-package/commits/be53e5b))
+
 ## <small>0.0.6 (2025-02-27)</small>
 
 * 🐛 fix(release): ajuste da mensagem de commit e do script do release-it ([862d9b6](https://gihthub.com/joaofaveri/template-package/commits/862d9b6))
