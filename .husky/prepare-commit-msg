@@ -1,7 +1,5 @@
 # This hook is called by "git commit" and can be used to modify the message before it is committed. If the exit status is non-zero, then the commit is aborted.
 # If message is empty, execute cz
-echo "'$0' '$1' '$2'"
-cat $1
 if [ -z "$2" ]; then
   exec < /dev/tty && npx cz --hook || true
   exit 0
