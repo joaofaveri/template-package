@@ -12,6 +12,6 @@
     "noEmit": true,
     "outDir": "dist"
   },
-  "include": ["src", "./tsup.config.ts"],
+  "include": ["src", "./tsup.config.ts", "./eslint.config.mjs"],
   "exclude": ["node_modules"]
 }
