@@ -5,8 +5,8 @@
     "after:release": ["echo Re-enables hooks", "unset HUSKY"]
   },
   "git": {
-    "commitMessage": "chore(release): new release - v${version}",
-    "commitArgs": ["-n", "-S"],
+    "commitMessage": "🧹 chore(release): new release - v${version}",
+    "commitArgs": ["-n", "-v", "-S"],
     "tagArgs": ["-s"]
   },
   "github": {
