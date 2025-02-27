@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
+## <small>0.0.6 (2025-02-27)</small>
+
+* 🐛 fix(release): ajuste da mensagem de commit e do script do release-it ([862d9b6](https://gihthub.com/joaofaveri/template-package/commits/862d9b6))
+
 ## <small>0.0.5 (2025-02-27)</small>
 
 * 🐛 fix(release): correção dos argumentos para o git commit ([e941176](https://gihthub.com/joaofaveri/template-package/commits/e941176))
