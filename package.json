@@ -24,7 +24,6 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@commitlint/cz-commitlint": "^19.6.1",
     "@eslint/js": "^9.21.0",
     "@eslint/json": "^0.10.0",
     "@release-it/conventional-changelog": "^10.0.0",
@@ -35,6 +34,7 @@
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-prettier": "^5.2.3",
+    "git-cz": "^4.9.0",
     "husky": "^9.1.7",
     "inquirer": "^9.3.7",
     "lint-staged": "^15.4.3",
@@ -46,7 +46,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/@commitlint/cz-commitlint"
+      "path": "./node_modules/git-cz"
     }
   },
   "engines": {
