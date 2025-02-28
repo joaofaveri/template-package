@@ -22,6 +22,12 @@ export default {
   },
   plugins: {
     '@release-it/conventional-changelog': {
+      infile: 'CHANGELOG.md',
+      header:
+        '# :tada: Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).',
+      context: {
+        linkCompare: true
+      },
       preset: {
         name: 'conventionalcommits',
         types: [
@@ -37,7 +43,17 @@ export default {
           },
           {
             type: 'refactor',
-            section: ':recycle: Code Changes (Refactors)',
+            section: ':adhesive_bandage: Other changes',
+            hidden: false
+          },
+          {
+            type: 'chore',
+            section: ':adhesive_bandage: Other changes',
+            hidden: false
+          },
+          {
+            type: 'build',
+            section: ':adhesive_bandage: Other changes',
             hidden: false
           },
           {
@@ -57,36 +73,20 @@ export default {
           },
           {
             type: 'test',
-            section: ':test_tube: Code Tests',
-            hidden: false
-          },
-          {
-            type: 'build',
-            section: ':wrench: Build System or External Dependencies',
+            section: ':zap: Performance Improvements',
             hidden: false
           },
           {
             type: 'ci',
-            section: ':package: Continuous Integrations',
-            hidden: false
-          },
-          {
-            type: 'chore',
-            section: ':adhesive_bandage: Other changes',
+            section: ':zap: Performance Improvements',
             hidden: false
           },
           {
             type: 'revert',
-            section: ':rewind: Reverts a Previous Commit',
+            section: ':zap: Performance Improvements',
             hidden: false
           }
         ]
-      },
-      infile: 'CHANGELOG.md',
-      header:
-        '# :tada: Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).',
-      context: {
-        linkCompare: true
       }
     }
   }
