@@ -3,22 +3,22 @@ module.exports = {
   disableEmoji: false,
   format: '{type}{scope}: {emoji}{subject}',
   list: [
-    'test',
     'feat',
     'fix',
+    'build',
     'chore',
-    'docs',
     'refactor',
     'style',
-    'ci',
+    'docs',
+    'test',
     'perf',
-    'build',
+    'ci',
     'revert'
   ],
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues'],
-  scopes: ['core', 'test', 'docs', 'release', 'lint', 'all', 'npm'],
+  scopes: ['core', 'lint', 'npm', 'all', 'test', 'docs', 'release'],
   types: {
     chore: {
       description: "Other changes that don't modify src or test files",
@@ -26,8 +26,7 @@ module.exports = {
       value: 'chore'
     },
     ci: {
-      description:
-        'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+      description: 'Changes to our CI configuration files and scripts',
       emoji: '📦',
       value: 'ci'
     },
@@ -63,13 +62,12 @@ module.exports = {
     },
     build: {
       description:
-        'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+        'Changes that affect the build system or external dependencies',
       emoji: '🛠️',
       value: 'build'
     },
     style: {
-      description:
-        'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+      description: 'Changes that do not affect the meaning of the code',
       emoji: '🎨',
       value: 'style'
     },
