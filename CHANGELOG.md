@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file. This projec
 
 ## :notebook:Release Notes
 
+:calendar: Released in **2025-03-01**
+
+:link: View full [0.3.4]() release
+
+:triangular_ruler: Comparing changes with [Previous Release](https://gihthub.com/joaofaveri/template-package/compare/0.3.3...0.3.4)
+
+:name_badge: Problems? [View Issues](https://gihthub.com/joaofaveri/template-package/issues) or create a [new issue](https://gihthub.com/joaofaveri/template-package/issues/new) to track ideas, feedback, tasks, or bugs
+
+:clap: This release was made possible by our amazing contributors:
+
+Contributors list is empty
+
+:small_red_triangle_down: See below all the important changes made to this project:
+### :lady_beetle: Bug Fixes
+
+* **release:** 🐞 links incorretos no header ([a6d0c5c](https://gihthub.com/joaofaveri/template-package/commit/a6d0c5c1912487425cf78c91f9c51b365769ae87))
+
+## :notebook:Release Notes
+
 [View full 0.3.3 release]()
 
 Released in **2025-03-01**
