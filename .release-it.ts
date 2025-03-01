@@ -9,7 +9,7 @@ export default {
   },
   github: {
     release: true,
-    releaseName: 'v${version}',
+    releaseName: 'Release ${version}',
     comments: {
       submit: false,
       issue:
