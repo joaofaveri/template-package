@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. This projec
 
 ## :notebook:Release Notes
 
+:small_red_triangle_down: See below all the important changes made to this project:
+### :lady_beetle: Bug Fixes
+
+* **release:** 🐞 simplificar as release notes ([2e28757](https://gihthub.com/joaofaveri/template-package/commit/2e287571e187ac6d0f504b7781d8b9242118c846))
+
+## :notebook:Release Notes
+
 :calendar: Released in **2025-03-01**
 
 :triangular_ruler: Compare changes with [Previous Release](https://gihthub.com/joaofaveri/template-package/compare/0.3.4...0.3.5)
