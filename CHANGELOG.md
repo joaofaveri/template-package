@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file. This projec
 
 ## :notebook:Release Notes
 
+[View full 0.3.3 release]()
+
+Released in **2025-03-01**
+
+[Comparing changes with Previous Release](https://gihthub.com/compare/0.3.2...0.3.3)
+
+[View Issues](https://gihthub.com/issues)
+
+:clap: This release was made possible by our amazing contributors:
+
+${exec('git log --format='%an <%ae>' $(git describe --tags --abbrev=0)..HEAD | sort | uniq')}
+
+See below all the important changes made to this project:
+### :lady_beetle: Bug Fixes
+
+* **release:** 🐞 ajusta variáveis no header ([d925bda](https://gihthub.com/joaofaveri/template-package/commit/d925bda9b62fa98d3aa85f8d654ae819c6db6b5a))
+
+## :notebook:Release Notes
+
 ## [0.3.2]() - 2025-03-01
 
 See below all the important changes made to this project:
