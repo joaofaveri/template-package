@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+This changelog is automatically generated using [`release-it`](https://github.com/release-it/release-it) and [`conventional-changelog`](https://github.com/release-it/conventional-changelog) plugin.
+
+# :notebook:Release Notes
+
+## [${version}](${releaseUrl}) - ${new Date().toISOString().split('T')[0]}
+
+This file keeps track of all the important changes made to this project
+### :sparkles: Features
+
+* **lint:** ✨ altera o adapter do commitzen ([9a97039](https://gihthub.com/joaofaveri/template-package/commit/9a97039ec799bcb1c79e3f7df64e194ed9230923))
+* **release:** ✨ incluir header e footer no release note ([982179d](https://gihthub.com/joaofaveri/template-package/commit/982179dc4d54b7cdf206f97bd77c255f1bdc7c71))
+
+### :lady_beetle: Bug Fixes
+
+* corrigir posição dos parâmtros do script release-it ([94bb22b](https://gihthub.com/joaofaveri/template-package/commit/94bb22b2e14f5ef12852c0b8d122df72390ce346))
+* **lint:** remoção do @commitlint/config-pnpm-scopes para evitar conflitos ([eeaafe8](https://gihthub.com/joaofaveri/template-package/commit/eeaafe8b02d457bb9a27238e3d48955a643df5f7))
+
+### :adhesive_bandage: Other changes
+
+* **lint:** ♻️ adequar configs do commitlint ([48c1518](https://gihthub.com/joaofaveri/template-package/commit/48c15184c87172646e7a9d2333cb442c11380f48))
+* **lint:** ♻️ converter release-it config para typescript ([5d3d0e0](https://gihthub.com/joaofaveri/template-package/commit/5d3d0e08a48218ee54d6551cceba96c888e7d220))
+* **lint:** ♻️ ordenar types e scopes no cz ([a3a1416](https://gihthub.com/joaofaveri/template-package/commit/a3a1416e92c42f5c34cfa13b9ef5556df241bea1))
+* **lint:** inquirer é uma peer dependence do @commitlint/cz-commitlint ([a4785d4](https://gihthub.com/joaofaveri/template-package/commit/a4785d4796ecec355b291f5133d44230f1620a25))
+* **lint:** remover o cz-emoji-conventional, que não será mais utilizado ([c207e2e](https://gihthub.com/joaofaveri/template-package/commit/c207e2effdeab07f016fefecd1dc91d8fd3a32f1))
+* **release:** ♻️ agrupar commits no changelog ([9cafc8f](https://gihthub.com/joaofaveri/template-package/commit/9cafc8f80e7c2d5e06d3ff841b4a8ba2bd779207))
+* **release:** ♻️ mudar o título do changelog ([76b6d88](https://gihthub.com/joaofaveri/template-package/commit/76b6d883dc57e46cadbcc36051c99ba9c3a33dc2))
+
+# :tada: Changelog
+
+All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
 ## [0.2.0](https://gihthub.com/joaofaveri/template-package/compare/0.1.0...0.2.0) (2025-02-27)
 
 ### :sparkles: Features
