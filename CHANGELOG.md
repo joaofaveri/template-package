@@ -6,6 +6,27 @@ All notable changes to this project will be documented in this file. This projec
 
 :calendar: Released in **2025-03-01**
 
+:triangular_ruler: Compare changes with [Previous Release](https://gihthub.com/joaofaveri/template-package/compare/0.3.4...0.3.5)
+
+:name_badge: Problems? [View Issues](https://gihthub.com/joaofaveri/template-package/issues) or create a [new issue](https://gihthub.com/joaofaveri/template-package/issues/new) to track ideas, feedback, tasks, or bugs
+
+## :busts_in_silhouette: Contributors
+
+:clap: This release was made possible by our amazing contributors:
+
+Contributors list is empty
+
+***
+
+:small_red_triangle_down: See below all the important changes made to this project:
+### :lady_beetle: Bug Fixes
+
+* **release:** 🐞 substituir links incorretos para o github ([6801d56](https://gihthub.com/joaofaveri/template-package/commit/6801d56a9acbf879b9e3c1a91dd3bd567e58e773))
+
+## :notebook:Release Notes
+
+:calendar: Released in **2025-03-01**
+
 :link: View full [0.3.4]() release
 
 :triangular_ruler: Comparing changes with [Previous Release](https://gihthub.com/joaofaveri/template-package/compare/0.3.3...0.3.4)
