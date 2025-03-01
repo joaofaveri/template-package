@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. This projec
 
 ## :notebook:Release Notes
 
+## [0.3.2]() - 2025-03-01
+
+See below all the important changes made to this project:
+### :lady_beetle: Bug Fixes
+
+* **release:** 🐞 prompt solicitará apenas a versão ([8b95589](https://gihthub.com/joaofaveri/template-package/commit/8b955894612b196401658fe487199f4cc6375d32))
+* **release:** 🐞 remover context não atilizado ([b6b5208](https://gihthub.com/joaofaveri/template-package/commit/b6b520825275cb6d5e65aabc57461617eca8b1b3))
+
+## :notebook:Release Notes
+
 ## [{{version}}]({{releaseUrl}}) - {{date}}
 
 See below all the important changes made to this project:
