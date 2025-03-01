@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsup",
     "prepare": "husky",
-    "release": "dotenv release-it -- -i"
+    "release": "dotenv release-it -- --only-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
