@@ -24,9 +24,25 @@ export default {
     '@release-it/conventional-changelog': {
       infile: 'CHANGELOG.md',
       header:
-        '# :tada: Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).',
+        '# :tada: Changelog\n\nAll notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n\nThis changelog is automatically generated using [`release-it`](https://github.com/release-it/release-it) and [`conventional-changelog`](https://github.com/release-it/conventional-changelog) plugin.',
       context: {
-        linkCompare: true
+        version: '${version}',
+        date: "${new Date().toISOString().split('T')[0]}",
+        tagUrl: '${releaseUrl}',
+        compareUrl: '${releaseUrl}/compare/${previousTag}...${version}',
+        issuesUrl: '${releaseUrl}/issues',
+        contributors:
+          // eslint-disable-next-line no-useless-escape
+          "${exec('git log --format=\'%an <%ae>\' $(git describe --tags --abbrev=0)..HEAD | sort | uniq')}"
+      },
+      writerOpts: {
+        headerPartial:
+          '# :notebook:Release Notes\n\n## [{{version}}]({{tagUrl}}) - {{date}}\n\nThis file keeps track of all the important changes made to this project',
+        footerPartial:
+          '\n***\n\n## :bookmark: Footer Notes\n\n[Comparing changes with Previous Release]({{compareUrl}})\n\n[View Issues]({{issuesUrl}})\n\n:clap: This release was made possible by our amazing contributors:\n\n{{contributors}}\n\n'
+      },
+      parserOpts: {
+        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
       },
       preset: {
         name: 'conventionalcommits',
