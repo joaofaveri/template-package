@@ -30,7 +30,7 @@ export default {
       },
       writerOpts: {
         headerPartial:
-          '## :notebook:Release Notes\n\n:calendar: Released in **{{date}}**\n\n:link: View full [{{version}}]({{tagUrl}}) release\n\n:triangular_ruler: Comparing changes with [Previous Release]({{repoUrl}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{version}})\n\n:name_badge: Problems? [View Issues]({{repoUrl}}/{{owner}}/{{repository}}/issues) or create a [new issue]({{repoUrl}}/{{owner}}/{{repository}}/issues/new) to track ideas, feedback, tasks, or bugs\n\n:clap: This release was made possible by our amazing contributors:\n\n{{contributors}}\n\n:small_red_triangle_down: See below all the important changes made to this project:'
+          '## :notebook:Release Notes\n\n:calendar: Released in **{{date}}**\n\n:triangular_ruler: Compare changes with [Previous Release]({{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{version}})\n\n:name_badge: Problems? [View Issues]({{host}}/{{owner}}/{{repository}}/issues) or create a [new issue]({{host}}/{{owner}}/{{repository}}/issues/new) to track ideas, feedback, tasks, or bugs\n\n## :busts_in_silhouette: Contributors\n\n:clap: This release was made possible by our amazing contributors:\n\n{{contributors}}\n\n***\n\n:small_red_triangle_down: See below all the important changes made to this project:'
       },
       parserOpts: {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
