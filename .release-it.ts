@@ -5,12 +5,12 @@ const footerCustomTemplate = fs
   .readFileSync('./changelog-footer.hbs')
   .toString()
 const headerCustomTemplate = fs
-  .readFileSync('./changelog-footer.hbs')
+  .readFileSync('./changelog-header.hbs')
   .toString()
 const commitCustomTemplate = fs
-  .readFileSync('./changelog-footer.hbs')
+  .readFileSync('./changelog-commit.hbs')
   .toString()
-const mainCustomTemplate = fs.readFileSync('./changelog-footer.hbs').toString()
+const mainCustomTemplate = fs.readFileSync('./changelog-main.hbs').toString()
 
 export default {
   git: {
