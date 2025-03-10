@@ -37,8 +37,7 @@ const fetchGitHubUsername = async (email: string) => {
 
     if (response.ok) {
       const json = await response.json()
-      console.log(json)
-      return `@${json.items[0].login}`
+      return JSON.stringify(json)
     }
     return email
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
