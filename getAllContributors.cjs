@@ -50,5 +50,5 @@ async function getContributors() {
 // ✅ Executando a função corretamente dentro de um IIFE
 ;(async () => {
   const contributors = await getContributors()
-  console.log(contributors.join(', '))
+  console.log(`export RELEASE-IT_CONTRIBUTORS="${contributors.join(', ')}"`)
 })()
