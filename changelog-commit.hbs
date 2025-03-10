@@ -19,7 +19,7 @@
       {{~@root.repoUrl}}
     {{~/if}}/
   {{~@root.commit}}/{{hash}}))
-{{~else if hash}} {{hash}}{{~/if}}
+{{~else if hash}} {{hash}}{{~/if}} 
 
 {{~!-- commit references --}}
 {{~#if references~}}
@@ -55,4 +55,4 @@
 {{~/if}}
 {{~this.repository}}#{{this.issue}}
 {{~/if}}{{/each}}
-{{~/if}}
+{{~/if}} 
