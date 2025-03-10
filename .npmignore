@@ -11,3 +11,4 @@ tsup.config.ts
 .commitlintrc.json
 .release-it.ts
 eslint.config.mjs
+changelog.config.cjs
