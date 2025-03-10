@@ -9,5 +9,5 @@ tsconfig.json
 tsup.config.ts
 .lintstagedrc.json
 .commitlintrc.json
-.release-it.json
-eslint.config.js
+.release-it.ts
+eslint.config.mjs
