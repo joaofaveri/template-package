@@ -27,10 +27,6 @@ export default {
   github: {
     release: true,
     releaseName: 'v${version}',
-    releaseNotes: {
-      commit:
-        '* ${commit.subject} ([${sha}](${commit.url})){ - thanks @${author.login}!}'
-    },
     comments: {
       submit: false,
       issue:
