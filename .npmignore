@@ -2,6 +2,7 @@
 /node_modules
 /.husky
 /.vscode
+/templates
 
 .env
 .env.example
