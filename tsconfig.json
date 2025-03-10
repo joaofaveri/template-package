@@ -12,6 +12,6 @@
     "noEmit": true,
     "outDir": "dist"
   },
-  "include": ["src", "./tsup.config.ts", "./eslint.config.mjs", "./changelog.config.cjs", "./.release-it.ts"],
+  "include": ["src", "./tsup.config.ts", "./eslint.config.mjs", "./changelog.config.cjs", "./.release-it.ts", "./getAllContributors.cjs"],
   "exclude": ["node_modules"]
 }
