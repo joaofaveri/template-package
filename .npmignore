@@ -13,3 +13,4 @@ tsup.config.ts
 .release-it.ts
 eslint.config.mjs
 changelog.config.cjs
+getAllContributors.cjs
