@@ -16,41 +16,51 @@ const mainCustomTemplate = fs
   .readFileSync('./templates/changelog-main.hbs')
   .toString()
 
-// Get all contributors since the last release
-const rawContributors = execSync(
-  "git log --format='%ae' $(git describe --tags --abbrev=0)..HEAD | sort | uniq"
-)
-  .toString()
-  .trim()
-  .split('\n')
-
-// Fetch GitHub username from email
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const fetchGitHubUsername = async (email: string) => {
+async function getAllContributors() {
   try {
-    const response = await fetch(
-      `https://api.github.com/search/users?q=${email}+in:email`,
-      {
-        headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` }
-      }
+    // Obtém os e-mails únicos dos contribuidores desde o último tag
+    const emails = execSync(
+      "git log --format='%ae' $(git describe --tags --abbrev=0)..HEAD | sort | uniq"
+    )
+      .toString()
+      .trim()
+      .split('\n')
+      .filter(email => email) // Remove linhas vazias
+
+    if (emails.length === 0) {
+      console.log('No contributors found!')
+      return
+    }
+
+    // Mapeia os e-mails para nomes de usuário do GitHub
+    const usernames = await Promise.all(
+      emails.map(async email => {
+        try {
+          const response = await fetch(
+            `https://api.github.com/search/users?q=${email}+in:email`,
+            {
+              headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` }
+            }
+          )
+
+          if (!response.ok)
+            throw new Error(`GitHub API error: ${response.status}`)
+
+          const data = await response.json()
+          return data.items.length > 0 ? `@${data.items[0].login}` : email
+        } catch {
+          return email
+        }
+      })
     )
 
-    if (response.ok) {
-      const json = await response.json()
-      return JSON.stringify(json)
-    }
-    return email
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    console.log(usernames.join('\n'))
+    return usernames.join(', ')
   } catch (error) {
-    return email
+    console.error('❌ Error fetching contributors:', error)
+    return
   }
-}
-
-// Get all contributors since the last release in a string format
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const getAllContributors = async () => {
-  const usernames = await Promise.all(rawContributors.map(fetchGitHubUsername))
-  return usernames.join(', ')
 }
 
 export default {
