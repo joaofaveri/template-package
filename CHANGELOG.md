@@ -133,12 +133,6 @@ See below all the important changes made to this project:
 
 * **release:** 🐞 corrigir as variáveis no context ([6278556](https://gihthub.com/joaofaveri/template-package/commit/62785567ff21e23fdb68d9d675e6686e6de1cde3))
 
-# :tada: Changelog
-
-All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-This changelog is automatically generated using [`release-it`](https://github.com/release-it/release-it) and [`conventional-changelog`](https://github.com/release-it/conventional-changelog) plugin.
-
 # :notebook:Release Notes
 
 ## [${version}](${releaseUrl}) - ${new Date().toISOString().split('T')[0]}
@@ -163,10 +157,6 @@ This file keeps track of all the important changes made to this project
 * **lint:** remover o cz-emoji-conventional, que não será mais utilizado ([c207e2e](https://gihthub.com/joaofaveri/template-package/commit/c207e2effdeab07f016fefecd1dc91d8fd3a32f1))
 * **release:** ♻️ agrupar commits no changelog ([9cafc8f](https://gihthub.com/joaofaveri/template-package/commit/9cafc8f80e7c2d5e06d3ff841b4a8ba2bd779207))
 * **release:** ♻️ mudar o título do changelog ([76b6d88](https://gihthub.com/joaofaveri/template-package/commit/76b6d883dc57e46cadbcc36051c99ba9c3a33dc2))
-
-# :tada: Changelog
-
-All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.2.0](https://gihthub.com/joaofaveri/template-package/compare/0.1.0...0.2.0) (2025-02-27)
 
@@ -198,9 +188,6 @@ All notable changes to this project will be documented in this file.This project
 
 * **release:** substituir emojis por código e melhorar textos ([9846a55](https://gihthub.com/joaofaveri/template-package/commit/9846a55843d6971be2cf7a09e68b3fc6e98dd44f))
 
-# Changelog
-
-All notable changes to this project will be documented in this file.This project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and adheres to [Semantic Versioning](https: //semver.org/spec/v2.0.0.html).
 
 ## <small>0.0.8 (2025-02-27)</small>
 
@@ -243,8 +230,6 @@ All notable changes to this project will be documented in this file.This project
 * 🐛 fix(lint): inclusão de argumento no git commit do release-it ([91be074](https://gihthub.com/joaofaveri/template-package/commits/91be074))
 * 🐛 fix(release): novo release, porém com erro no envio para o github ([c5757f9](https://gihthub.com/joaofaveri/template-package/commits/c5757f9))
 * first commit ([6a9c012](https://gihthub.com/joaofaveri/template-package/commits/6a9c012))
-
-# Changelog
 
 ## <small>0.0.1 (2025-02-27)</small>
 
