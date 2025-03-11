@@ -1,5 +1,6 @@
 import type { Config } from 'release-it'
 
+import { execSync } from 'child_process'
 import fs from 'fs'
 // Templates for Changelog and Release Notes
 const footerCustomTemplate = fs
@@ -14,6 +15,27 @@ const commitCustomTemplate = fs
 const mainCustomTemplate = fs
   .readFileSync('./templates/changelog-main.hbs')
   .toString()
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+async function putContributorsInContext(context: { contributors: string }) {
+  try {
+    // Executa o script get-contributors.js e captura a saída como string
+    const contributors = execSync('node getAllContributors.cjs', {
+      encoding: 'utf-8'
+    }).trim()
+
+    if (contributors) {
+      context.contributors = contributors // Injeta no contexto
+    } else {
+      context.contributors = 'No contributors found.'
+    }
+  } catch (error) {
+    console.error('❌ Error fetching contributors:', error)
+    context.contributors = ' - '
+  }
+
+  return context
+}
 
 export default {
   git: {
@@ -49,6 +71,7 @@ export default {
         commitPartial: commitCustomTemplate,
         footerPartial: footerCustomTemplate
       },
+      finalizeContext: putContributorsInContext,
       parserOpts: {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
       },
