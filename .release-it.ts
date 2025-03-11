@@ -18,6 +18,7 @@ const mainCustomTemplate = fs
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 async function putContributorsInContext(context: { contributors: string }) {
+  console.log('👥 Fetching contributors...')
   try {
     // Executa o script get-contributors.js e captura a saída como string
     const contributors = execSync('node getAllContributors.cjs', {
