@@ -32,6 +32,8 @@ async function getContributors() {
       return []
     }
 
+    console.log(emails)
+
     // Mapeia os e-mails para nomes de usuário do GitHub
     const usernames = await Promise.all(
       emails.map(async email => {
@@ -39,12 +41,12 @@ async function getContributors() {
           const response = await fetch(
             `https://api.github.com/search/users?q=${email}+in:email`
           )
-
+          const data = await response.json()
           if (!response.ok)
             throw new Error(`GitHub API error: ${response.status}`)
-
-          const data = await response.json()
-          return `@${data.items[0].login}`
+          if (data.items && data.items.length > 0) {
+            return `@${data.items[0].login}` // Retorna o nome de usuário do GitHub
+          }
         } catch (error) {
           return error
         }
