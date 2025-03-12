@@ -6,6 +6,7 @@
   "author": "João Paulo de Faveri",
   "homepage": "https://www.legislato.com.br",
   "repository": {
+    "type": "git",
     "url": "https://github.com/joaofaveri/template-package.git"
   },
   "keywords": [
