@@ -32,8 +32,6 @@ async function getContributors() {
       return []
     }
 
-    console.log(emails)
-
     // Mapeia os e-mails para nomes de usuário do GitHub
     const usernames = await Promise.all(
       emails.map(async email => {
