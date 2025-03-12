@@ -9,21 +9,24 @@ async function getContributors() {
   try {
     // Obtém os e-mails únicos dos contribuidores desde o último tag
     const emails = execSync(
-      "git log --format='%ae' $(git describe --tags --abbrev=0)..HEAD | sort | uniq"
+      "git log --format='%ae' $(git describe --tags --abbrev=0)..HEAD"
     )
       .toString()
       .trim()
       .split('\n')
       .filter(email => email) // Remove linhas vazias
 
-    if (emails.length === 0) {
+    // Processa a saída como um Set para remover duplicatas
+    const uniqEmails = [...new Set(emails)]
+
+    if (uniqEmails.length === 0) {
       console.log('No contributors found.')
       return []
     }
 
     // Mapeia os e-mails para nomes de usuário do GitHub
     const usernames = await Promise.all(
-      emails.map(async email => {
+      uniqEmails.map(async email => {
         try {
           const response = await fetch(
             `https://api.github.com/search/users?q=${email}+in:email`
