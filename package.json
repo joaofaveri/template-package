@@ -19,10 +19,10 @@
   "scripts": {
     "build": "tsup",
     "prepare": "husky",
-    "release": "dotenv release-it -- --verbose",
+    "release": "npm run build && dotenv release-it -- --verbose",
     "release:no-npm": "dotenv release-it -- --no-npm.publish",
-    "release:changelog": "dotenv release-it -- --changelog",
-    "release:version": "dotenv release-it -- --release-version"
+    "release:changelog": "npm run build && dotenv release-it -- --changelog",
+    "release:version": "npm run build && dotenv release-it -- --release-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
