@@ -58,6 +58,7 @@ export default {
       parserOpts: {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
       },
+      ignoreRecommendedBump: true,
       preset: {
         name: 'conventionalcommits',
         types: [
