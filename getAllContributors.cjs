@@ -22,7 +22,7 @@ async function getContributors() {
       ...new Set(
         output
           .split('\n')
-          .map(email => email.trim())
+          .map(email => email.trim().replace(/^['"]|['"]$/g, ''))
           .filter(email => email)
       )
     ]
