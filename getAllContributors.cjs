@@ -7,26 +7,34 @@ const { execSync } = require('child_process')
  */
 async function getContributors() {
   try {
-    // Obtém os e-mails únicos dos contribuidores desde o último tag
-    const emails = execSync(
-      "git log --format='%ae' $(git describe --tags --abbrev=0)..HEAD"
-    )
-      .toString()
-      .trim()
-      .split('\n')
-      .filter(email => email) // Remove linhas vazias
+    // Obtém a tag mais recente de forma segura
+    const lastTag = execSync('git describe --tags --abbrev=0', {
+      encoding: 'utf-8'
+    }).trim()
 
-    // Processa a saída como um Set para remover duplicatas
-    const uniqEmails = [...new Set(emails)]
+    // Usa a tag para obter os e-mails dos commits desde essa versão
+    const output = execSync(`git log --format='%ae' ${lastTag}..HEAD`, {
+      encoding: 'utf-8'
+    })
 
-    if (uniqEmails.length === 0) {
-      console.log('No contributors found.')
+    // Processa a saída para remover duplicatas
+    const emails = [
+      ...new Set(
+        output
+          .split('\n')
+          .map(email => email.trim())
+          .filter(email => email)
+      )
+    ]
+
+    if (emails.length === 0) {
+      console.log('')
       return []
     }
 
     // Mapeia os e-mails para nomes de usuário do GitHub
     const usernames = await Promise.all(
-      uniqEmails.map(async email => {
+      emails.map(async email => {
         try {
           const response = await fetch(
             `https://api.github.com/search/users?q=${email}+in:email`
