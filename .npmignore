@@ -4,13 +4,14 @@
 /.vscode
 /templates
 
+.commitlintrc.json
 .env
 .env.example
+.gitignore
+.release-it.ts
+changelog.config.cjs
+eslint.config.mjs
+getAllContributors.cjs
+.lintstagedrc.json
 tsconfig.json
 tsup.config.ts
-.lintstagedrc.json
-.commitlintrc.json
-.release-it.ts
-eslint.config.mjs
-changelog.config.cjs
-getAllContributors.cjs
