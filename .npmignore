@@ -3,6 +3,7 @@
 /.husky
 /.vscode
 /templates
+/tests
 
 .commitlintrc.json
 .env
@@ -12,6 +13,7 @@
 changelog.config.cjs
 eslint.config.mjs
 getAllContributors.cjs
+jest.config.ts
 .lintstagedrc.json
 tsconfig.json
 tsup.config.ts

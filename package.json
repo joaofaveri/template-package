@@ -19,11 +19,12 @@
   "types": "./dist/index.d.js",
   "scripts": {
     "build": "tsup",
+    "test": "jest",
     "prepare": "husky",
-    "release": "npm run build && dotenv release-it -- --verbose",
-    "release:no-npm": "dotenv release-it -- --no-npm.publish",
-    "release:changelog": "npm run build && dotenv release-it -- --changelog",
-    "release:version": "npm run build && dotenv release-it -- --release-version"
+    "release": "npm run test && npm run build && dotenv release-it -- --verbose",
+    "release:no-npm": "npm run test && dotenv release-it -- --no-npm.publish",
+    "release:changelog": "npm run test && npm run build && dotenv release-it -- --changelog",
+    "release:version": "npm run test && npm run build && dotenv release-it -- --release-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
@@ -41,9 +42,11 @@
     "git-cz": "^4.9.0",
     "husky": "^9.1.7",
     "inquirer": "^9.3.7",
+    "jest": "^29.7.0",
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
     "release-it": "^18.1.2",
+    "ts-node": "^10.9.2",
     "tsup": "^8.4.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
