@@ -27,25 +27,29 @@ This repository provides a basic template for creating Node.js packages with Typ
     ```bash
     npm install
     ```
+3.  **Configure environment variables:**
+    * Copy `env-example` to `.env`.
+    * Replace `GITHUB_TOKEN` with your GitHub Personal Access Token.
+    * This token is required to automate GitHub operations, including creating releases and tags.
 
-3.  **Develop:**
+4.  **Develop:**
 
     * Modify the `src/` files with your package's code.
     * Create unit tests in `tests/`.
 
-4.  **Run tests:**
+5.  **Run tests:**
 
     ```bash
     npm run test
     ```
 
-5.  **Build the package:**
+6.  **Build the package:**
 
     ```bash
     npm run build
     ```
 
-6.  **Publish the package (optional):**
+7.  **Publish the package (optional):**
 
     ```bash
     npm run release
