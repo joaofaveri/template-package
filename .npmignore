@@ -4,13 +4,13 @@
 /.vscode
 /templates
 /tests
+/coverage
 
 .commitlintrc.json
 .env
 .env.example
 .gitignore
 .release-it.ts
-babel.config.ts
 changelog.config.cjs
 eslint.config.mjs
 getAllContributors.cjs
