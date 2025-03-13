@@ -18,7 +18,7 @@ This repository provides a basic template for creating Node.js packages with Typ
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/joaofaveri/template-package.git](https://github.com/joaofaveri/template-package.git)
+    git clone https://github.com/joaofaveri/template-package.git
     cd template-package
     ```
 
