@@ -2,38 +2,6 @@
 
 This repository provides a basic template for creating Node.js packages with TypeScript, Jest, and ESLint.
 
-## Project Structure
-
-📦template-package
- ┣ 📂.husky
- ┃ ┣ 📜commit-msg
- ┃ ┣ 📜pre-commit
- ┃ ┗ 📜prepare-commit-msg
- ┣ 📂.vscode
- ┃ ┗ 📜settings.json
- ┣ 📂dist
- ┣ 📂src
- ┣ 📂templates
- ┃ ┣ 📜changelog-commit.hbs
- ┃ ┣ 📜changelog-footer.hbs
- ┃ ┣ 📜changelog-header.hbs
- ┃ ┗ 📜changelog-main.hbs
- ┣ 📂tests
- ┣ 📜.commitlintrc.json
- ┣ 📜.env.example
- ┣ 📜.gitignore
- ┣ 📜.lintstagedrc.json
- ┣ 📜.npmignore
- ┣ 📜.release-it.ts
- ┣ 📜changelog.config.cjs
- ┣ 📜eslint.config.mjs
- ┣ 📜getAllContributors.cjs
- ┣ 📜jest.config.ts
- ┣ 📜package-lock.json
- ┣ 📜package.json
- ┣ 📜tsconfig.json
- ┗ 📜tsup.config.ts
-
 ## Features
 
 * **TypeScript:** The project is configured to use TypeScript, ensuring static typing and improving code quality.
