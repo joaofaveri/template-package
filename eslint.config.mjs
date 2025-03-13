@@ -81,6 +81,6 @@ export default [
     }
   },
   {
-    ignores: ['dist/', 'build/', 'node_modules/', './CHANGELOG.md']
+    ignores: ['dist/', 'build/', 'node_modules/', './CHANGELOG.md', 'coverage/']
   }
 ]
