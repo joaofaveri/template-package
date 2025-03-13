@@ -19,6 +19,7 @@
   "types": "./dist/index.d.js",
   "scripts": {
     "build": "tsup",
+    "lint": "eslint --fix",
     "test": "jest",
     "prepare": "husky",
     "release": "npm run test && npm run build && dotenv release-it -- --verbose",
