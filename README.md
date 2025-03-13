@@ -30,8 +30,8 @@ This repository provides a basic template for creating Node.js packages with Typ
 
 3.  **Develop:**
 
-    * Modify the `src/index.ts` file with your package's code.
-    * Create unit tests in `tests/index.test.ts`.
+    * Modify the `src/` files with your package's code.
+    * Create unit tests in `tests/`.
 
 4.  **Run tests:**
 
@@ -61,15 +61,57 @@ This repository provides a basic template for creating Node.js packages with Typ
 * **commitlint:** commitlint settings can be adjusted in the `commitlint.config.js` file.
 * **release-it:** release-it settings can be adjusted in the `.release-it.ts` and `changelog.config.cjs` files.
 
-## Dependencies
+### commitlint
 
-* **TypeScript:** `typescript`
-* **Jest:** `jest`, `@types/jest`, `ts-jest`
-* **ESLint:** `eslint`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`
-* **Husky:** `husky`
-* **lint-staged:** `lint-staged`
-* **commitlint:** `@commitlint/cli`, `@commitlint/config-conventional`
-* **release-it:** `release-it`
+* The `commitlint.config.js` file allows you to customize the commit message format.
+    * It uses the `conventional-changelog-conventionalcommits` preset, which enforces a standardized commit message format.
+    * You can define rules to enforce specific conventions for commit message headers, scopes, and types.
+    * **Available Rules:**
+        * `header-case`: Enforces the case of the commit header (e.g., lowercase, uppercase).
+        * `header-full-stop`: Enforces or prohibits a full stop at the end of the commit header.
+        * `header-max-length`: Enforces a maximum length for the commit header.
+        * `header-min-length`: Enforces a minimum length for the commit header.
+        * `body-case`: Enforces the case of the commit body.
+        * `body-full-stop`: Enforces or prohibits a full stop at the end of the commit body.
+        * `body-leading-blank`: Enforces or prohibits a leading blank line for the commit body.
+        * `body-max-line-length`: Enforces a maximum line length for the commit body.
+        * `body-min-line-length`: Enforces a minimum line length for the commit body.
+        * `footer-case`: Enforces the case of the commit footer.
+        * `footer-full-stop`: Enforces or prohibits a full stop at the end of the commit footer.
+        * `footer-leading-blank`: Enforces or prohibits a leading blank line for the commit footer.
+        * `footer-max-line-length`: Enforces a maximum line length for the commit footer.
+        * `footer-min-line-length`: Enforces a minimum line length for the commit footer.
+        * `scope-case`: Enforces the case of the commit scope.
+        * `scope-empty`: Enforces or prohibits an empty commit scope.
+        * `scope-enum`: Enforces specific values for the commit scope.
+        * `scope-max-length`: Enforces a maximum length for the commit scope.
+        * `scope-min-length`: Enforces a minimum length for the commit scope.
+        * `subject-case`: Enforces the case of the commit subject.
+        * `subject-empty`: Enforces or prohibits an empty commit subject.
+        * `subject-full-stop`: Enforces or prohibits a full stop at the end of the commit subject.
+        * `subject-max-length`: Enforces a maximum length for the commit subject.
+        * `subject-min-length`: Enforces a minimum length for the commit subject.
+        * `type-case`: Enforces the case of the commit type.
+        * `type-empty`: Enforces or prohibits an empty commit type.
+        * `type-enum`: Enforces specific values for the commit type.
+    * Example: Enforce a specific format for commit message headers.
+
+### lint-staged
+
+* The `lint-staged` configuration in `.lintstagedrc.json` defines which linters to run on staged files.
+    * All staged files will be checked by `eslint --fix` to automatically fix linting errors.
+    * You can specify different linters for different file types.
+    * Example: Run ESLint on staged `.ts` files and Prettier on staged `.js` and `.json` files.
+
+### Changelog
+
+* The `release-it` configuration in `.release-it.ts` automates changelog generation.
+    * It uses `@release-it/conventional-changelog` and `conventionalcommits` preset to generate a changelog based on commit messages.
+    * The `template` folder contains templates for changelog generation, allowing for customization of the output format.
+    * You can customize the changelog format and content.
+* When using `release-it` the changelog is auto generated during releases.
+* For a better commit prompt experience, this package use `commitizen` and `git-cz` to trigger the interactive commit prompt.
+* The `changelog.config.cjs` file allows you to configure the commit prompt, including possible scopes.
 
 ## Scripts
 
