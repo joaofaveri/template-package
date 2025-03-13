@@ -10,6 +10,7 @@
 .env.example
 .gitignore
 .release-it.ts
+babel.config.ts
 changelog.config.cjs
 eslint.config.mjs
 getAllContributors.cjs
