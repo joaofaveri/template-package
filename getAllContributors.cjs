@@ -8,9 +8,23 @@ const { execSync } = require('child_process')
 async function getContributors() {
   try {
     // Obtém a tag mais recente de forma segura
-    const lastTag = execSync('git describe --tags --abbrev=0', {
-      encoding: 'utf-8'
-    }).trim()
+    let lastTag = ''
+    try {
+      lastTag = execSync('git describe --tags --abbrev=0', {
+        encoding: 'utf-8'
+      }).trim()
+    } catch (tagError) {
+      console.error('No tags found:', tagError.message)
+      console.log(
+        'No tags found. Searching for commits since the beginning of time...'
+      )
+      const totalCommits = parseInt(
+        execSync('git rev-list --count HEAD', { encoding: 'utf-8' }).trim(),
+        10
+      )
+      console.log('Total commits: ', totalCommits)
+      lastTag = `HEAD~${totalCommits}`
+    }
 
     // Usa a tag para obter os e-mails dos commits desde essa versão
     const output = execSync(`git log --format='%ae' ${lastTag}..HEAD`, {
@@ -28,7 +42,7 @@ async function getContributors() {
     ]
 
     if (emails.length === 0) {
-      console.log('')
+      console.log('No new commits since last tag')
       return []
     }
 
@@ -39,11 +53,17 @@ async function getContributors() {
           const response = await fetch(
             `https://api.github.com/search/users?q=${email}+in:email`
           )
-          const data = await response.json()
-          if (!response.ok)
+          if (!response.ok) {
+            if (response.status === 403) {
+              throw new Error('GitHub API rate limit exceeded')
+            }
             throw new Error(`GitHub API error: ${response.status}`)
+          }
+          const data = await response.json()
           if (data.items && data.items.length > 0) {
             return `@${data.items[0].login}` // Retorna o nome de usuário do GitHub
+          } else {
+            return `Email ${email} not found on GitHub`
           }
         } catch (error) {
           return error
